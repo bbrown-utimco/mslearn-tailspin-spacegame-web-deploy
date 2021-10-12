@@ -134,7 +134,7 @@ stages:
   - deployment: Deploy
     pool:
       vmImage: 'ubnutu-20.04'
-    environment: staging
+    environment: Staging
     variables:
     - group: 'Release'
     strategy:
