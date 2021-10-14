@@ -12,7 +12,7 @@ schedules:
     include:
     - release
   always: false
-  dotnetSdkVersion: '5.x'
+  #dotnetSdkVersion: '5.x'
 
 stages:
 - stage: 'Build'
