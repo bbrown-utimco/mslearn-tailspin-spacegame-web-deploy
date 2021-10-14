@@ -4,6 +4,7 @@ trigger:
 variables:
   buildConfiguration: 'Release'
   releaseBranchName: 'release'
+  dotnetSdkVersion: '5.x'
 
 schedules:
 - cron: '0 3 * * *'
@@ -12,7 +13,6 @@ schedules:
     include:
     - release
   always: false
-  #dotnetSdkVersion: '5.x'
 
 stages:
 - stage: 'Build'
@@ -27,7 +27,7 @@ stages:
 
     variables:
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-      dotnetSdkVersion: '5.x'
+      #dotnetSdkVersion: '5.x'
 
     steps:
     - task: UseDotNet@2
