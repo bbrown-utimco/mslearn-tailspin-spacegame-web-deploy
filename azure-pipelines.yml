@@ -141,7 +141,7 @@ stages:
             displayName: 'Swap deployment slots'
             inputs: 
               azureSubscription: 'TailSpinSpaceGameStaging'
-              webAppName: '$(WebAppNameStaging)'
-              sourceSlot: 'swap'
-              targetSlot: 'production'
-              action: 'Swap Slots'
+              Action: 'Swap Slots'
+              WebAppName: '$(WebAppNameStaging)'
+              ResourceGroupName: 'DevOpsLab-RG'
+              SourceSlot: 'swap'
